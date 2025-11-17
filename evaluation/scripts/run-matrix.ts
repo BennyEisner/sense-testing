@@ -1,5 +1,5 @@
-import { execSync } from "child_process";
-import fs from "fs";
+const { execSync } = require("child_process") as typeof import("child_process");
+const fs = require("fs") as typeof import("fs");
 
 type SuiteResult = {
   name: string;

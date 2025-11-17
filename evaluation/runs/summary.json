@@ -1,0 +1,30 @@
+[
+  {
+    "name": "cypress-human",
+    "command": "start-server-and-test dev http://127.0.0.1:4173 \"cypress:run -- --spec 'tests/cypress/human/**/*.cy.ts'\"",
+    "runs": 3,
+    "passes": 0,
+    "failures": 3
+  },
+  {
+    "name": "cypress-ai",
+    "command": "start-server-and-test dev http://127.0.0.1:4173 \"cypress:run -- --spec 'tests/cypress/ai/**/*.cy.ts'\"",
+    "runs": 3,
+    "passes": 0,
+    "failures": 3
+  },
+  {
+    "name": "pw-human",
+    "command": "start-server-and-test dev http://127.0.0.1:4173 \"pw:test -- --project=chromium --grep '@ai-e2e-lab|@all'\"",
+    "runs": 3,
+    "passes": 0,
+    "failures": 3
+  },
+  {
+    "name": "pw-ai",
+    "command": "start-server-and-test dev http://127.0.0.1:4173 \"pw:test --config=configs/playwright.config.ts --grep '@ai'\"",
+    "runs": 3,
+    "passes": 0,
+    "failures": 3
+  }
+]
